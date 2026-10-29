@@ -1,0 +1,21 @@
+pip install -e .
+install cuda cudnn pytorch
+
+# 分阶段预处理
+nnUNetv2_extract_fingerprint -d 602 --verify_dataset_integrity -np 10
+nnUNetv2_plan_experiment -d 602
+nnUNetv2_preprocess -d 602 -c 3d_fullres -np 10
+
+
+# 模型训练
+# 500 epochs
+nnUNetv2_train 602 3d_fullres 0 -tr nnUNetTrainerHFENet_500epochs
+
+# 1000 epochs
+nnUNetv2_train 602 3d_fullres 0 -tr nnUNetTrainerHFENet_2000epochs
+
+
+# 微调
+python /mnt/PhD/pythonproject/PHD_PROGRAM/project0121/nnUNet/nnunetv2/run/run_pretrain_transfer.py 602 3d_fullres 1 -pretrained_weights /mnt/PhD/pythonproject/PHD_PROGRAM/project0121/Data/nnUNet_results/Dataset292_TotalSegmentator_vertebrae/nnUNetTrainerHFENet_2000epochs__nnUNetPlans__3d_fullres_residual/fold_0/checkpoint_best.pth -tr nnUNetTrainerHFENet_2000epochs
+
+
