@@ -1,0 +1,14 @@
+Original material: rights reserved; separate licenses preserved
+
+
+Public visibility is for inspection and does not itself grant a general license to use the publisher's original code, documentation, or model weights.
+
+For original material whose rights are held by the repository publisher and which is not already covered by another license, all rights are reserved. Prior written permission from the relevant copyright holder is required to execute, deploy, modify, redistribute, sublicense, commercialize, or use that material for model training or inference. This applies to both commercial and non-commercial use. Request permission by opening an issue in this repository before use.
+
+This notice is subject to applicable law and GitHub's Terms of Service, including rights to view and fork public repositories through GitHub. It does not remove statutory exceptions, revoke permissions previously granted, or override any existing license or separate written agreement.
+
+Third-party components and material already licensed under Apache-2.0, BSD, MIT, GPL, LGPL, or another license retain their applicable licenses, notices, and permissions. Any applicable copyleft requirements take precedence. No ownership of third-party material is claimed. A restriction in this notice must not be interpreted as restricting rights granted by those licenses.
+
+公开展示不等于自动授予通用使用许可。对于发布者有权限制、且未受其他许可证约束的原创代码、文档和模型权重，未经相关权利人事先书面授权，不授予运行、部署、修改、再分发、商用或用于模型训练/推理的许可；科研及其他非商业用途同样需要授权。
+
+GitHub 条款允许的查看与站内 Fork、法律规定的例外、此前已授予的权利及第三方许可证均予以保留。本声明不表示所有使用行为都会自动构成侵权，也不改变第三方开源许可。
